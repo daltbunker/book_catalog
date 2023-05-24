@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Dees</title>
+</head>
+<body>
+  <h1>Dee's Books</h1>
+  <div class="books"></div>
+  <button id="openUploadFormBtn">Upload Books</button>
+  <dialog id="uploadFormDialog" style="border-radius: 2px;">
+    <h2 style="text-align: center; margin-top: 0">Upload Books</h2>
+    <form id="bookUploadForm" action="http://localhost:8080/books/upload/" method="POST" enctype="multipart/form-data">
+      <input id="fileInput" type="file" name="file" accept=".csv">
+      <div class="dialogBtns">
+        <button formmethod="dialog">cancel</button>
+        <button>submit</button>
+      </div>
+    </form>
+  </dialog>
+  
+  <script src="main.js"></script>
+</body>
+</html>

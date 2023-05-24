@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#openUploadFormBtn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+#bookUploadForm {
+  display: flex;
+  flex-direction: column; 
+  row-gap: 20px; 
+  padding: 10px; 
+}
+
+button {
+  padding: 3px 6px;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 14px;
+
+}
+
+.dialogBtns {
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.bookContainer {
+  border-bottom: 3px solid black;
+  border-radius: 2px;
+  width: 60%;
+  padding: 20px;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px
+}
+
+.ratingsContainer {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 6px;
+}
